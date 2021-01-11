@@ -38,27 +38,11 @@ const ProductDetails = () => {
             </div>
           </a>
           <div className="box">
-            <div className="row">
-              <h2>{item.title}</h2>
-              <span>${item.price}</span>
-            </div>
-            <div className="colors">
-              {item.colors.map((color, indx) => (
-                <button style={{ background: color }} key={indx}></button>
-              ))}
-            </div>
-            <p>{item.description}</p>
-            <p>{item.content}</p>
-            <div className="thumb" ref={myRef}>
+            <div className="row"></div>
+            <div className="thumb">
               {item.src.map((img, indx) => (
                 <a data-zoom-id="andr" href={img} data-image={img} title="...">
-                  <img
-                    src={img}
-                    alt="img"
-                    key={indx}
-                    // onClick={() => handleTab(indx)}
-                    // onMouseOver={() => handleTab(indx)}
-                  />
+                  <img src={img} alt="img" key={indx} />
                 </a>
               ))}
             </div>
