@@ -17,33 +17,11 @@ const ProductDetails = () => {
           "/img/img4.jpg",
           "/img/img5.jpg",
         ],
-        description: "UX desgining",
-        content: "Welcome to our channel...",
-        price: 23,
-        colors: ["red", "black", "crimson", "teal"],
         count: 1,
       },
     ],
     index: 0,
   });
-
-  const { products, index } = state;
-
-  // useEffect(() => {
-  //   const { index } = state;
-  // myRef.current.children[index].className = "active";
-  // }, []);
-
-  const handleTab = (index) => {
-    setState({ products, index: index });
-    setActiveIndex(index);
-    // const images = myRef.current.children;
-    // console.log("imgs", images);
-    // for (let i = 0; i < images.length; i++) {
-    //   images[i].className = images[i].className.replace("active", "");
-    // }
-    // images[index].className = "active";
-  };
 
   return (
     <div className="App">
